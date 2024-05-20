@@ -1,0 +1,18 @@
+import random
+
+number = random.randint(1,100)
+count = 1
+
+while count <= 5:
+    guess = int(input("Enter your number: "))
+    if guess == number:
+        print("Congrats! You guessed the number. It was ", number)
+        break
+    elif count == 5:
+        print("You're out of guesses. The number was ", number)
+        break
+    elif guess > number:
+        print("Your guess number is high")
+    else:
+        print("Your guess number is low")
+    count += 1
