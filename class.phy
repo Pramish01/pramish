@@ -1,0 +1,28 @@
+# class=structure,one
+# object=varible,many
+# instance=single
+# method=property
+
+class myclass:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+p1=myclass ("pramish",16)
+print(p1.name)
+print(p1.age)
+
+class person:
+    def walk(self):
+        print("yes i can walk")
+
+    def fly(self):
+        print("No i can't fly ")
+
+    def run(self):
+        print("Yes i can run")
+ 
+pramish=person()
+pramish.walk()
+pramish.fly()
+pramish.run()
